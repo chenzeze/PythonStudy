@@ -1,0 +1,47 @@
+#-*-coding:utf-8-*-
+import os
+
+def fun(list):#fun函数返回各个.txt文件中所有词语在太空.txt中的出现次数之和
+    file = open('/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/太空旅客.txt','r')
+    str = file.read()
+    file.close()
+    c={}
+    sum=0
+    for x in list:
+        c[x]=str.count(x)
+        sum+=c[x]
+    return sum
+
+def list(file):#list函数把传入的该.txt文件中每一行的词语都存进列表list中
+    list=[]
+    lines=set(file.read().split( ))
+    for line in lines:
+        list.append(line)
+    return list
+
+def GetFileList(dir, fileList):#遍历目录下所有文件（.txt)
+    if os.path.isfile(dir):
+        fileList.append(dir)
+    elif os.path.isdir(dir):
+        for s in os.listdir(dir):
+            newDir = os.path.join(dir, s)
+            GetFileList(newDir, fileList)
+    return fileList
+
+
+lista = GetFileList(r'/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/', [])
+dict={}
+for e in lista:
+    dict[fun(list(open(e,'rb')))]=open(e,'rb').name.split('词典/')[1].strip('.txt')
+#把各个.txt文件中所有词语在太空.txt中的出现次数之和作为字典的key,把相对应.txt文件名作为字典的value
+
+'''
+输出目录下所有文件的路径
+for i in lista:
+    print i
+输出字典中的keys,values
+for key,value in dict.items():
+    print key,value
+    '''
+maxnum=max(x for x in dict.keys())
+print '人们最高关注点为'+dict[maxnum]
