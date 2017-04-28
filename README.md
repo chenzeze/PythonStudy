@@ -1,7 +1,7 @@
 # PythonStudy
 文件路径：
 /home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/试听效果中的其他.txt
-/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/视听.txt
+/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/视听.tx
 /home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/镜头.txt
 /home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/试听效果中的其他
 /home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/视听/画面.txt
