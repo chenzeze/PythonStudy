@@ -55,7 +55,7 @@ for i in lista:
 
 for key,value in dict.items():
 
-    print key,value
+    print '%-10s%-10s' %(key,value)
 
 maxnum = max(dict.keys())
 
