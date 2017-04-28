@@ -5,7 +5,7 @@ with open('/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础�
 
     page = f.read()
 
-def fun(file):#计算每个txt文件中所有词在太空旅客中的出现次数
+def fun(file):#
 
     c = {}
 
@@ -21,7 +21,7 @@ def fun(file):#计算每个txt文件中所有词在太空旅客中的出现次�
 
     return sum
 
-def GetFileList(dir, fileList):#遍历一个目录下所有文件
+def GetFileList(dir, fileList):
 
     if os.path.isfile(dir):
 
@@ -46,9 +46,12 @@ for e in lista:
 
     dict[fun(open(e, 'rb'))] = open(e, 'rb').name.split('词典/')[1].strip('.txt')
 
+'''输出文件路径
+
 for i in lista:
 
     print i
+'''
 
 for key,value in dict.items():
 
