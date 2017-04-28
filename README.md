@@ -1,8 +1,10 @@
 # PythonStudy
 文件路径：
+
 /home/chen/Downloads/数挖2017培训教学资料/week2 Python基础语言讲解/作业/词典/（主题，制作，剧情，视听，角色）/..txt
 
 输出结果
+
 0 制作/出品公司
 
 4481 视听/音乐
