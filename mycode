@@ -5,7 +5,7 @@ with open('/home/chen/Downloads/数挖2017培训教学资料/week2 Python基础�
 
     page = f.read()
 
-def fun(file):#
+def fun(file):#fun函数返回各个.txt文件中所有词语在太空.txt中的出现次数之和
 
     c = {}
 
@@ -21,7 +21,7 @@ def fun(file):#
 
     return sum
 
-def GetFileList(dir, fileList):
+def GetFileList(dir, fileList):#遍历目录下所有文件（.txt)
 
     if os.path.isfile(dir):
 
@@ -55,7 +55,7 @@ for i in lista:
 
 for key,value in dict.items():
 
-    print '%-10s%-10s' %(key,value)
+    print '%-10s%s' %(key,value)
 
 maxnum = max(dict.keys())
 
